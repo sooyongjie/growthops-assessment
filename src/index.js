@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import Nav from './components/Nav';
 import Welcome from './components/Welcome';
 import reportWebVitals from './reportWebVitals';
 
@@ -8,6 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <Welcome />
+    <Nav />
   </React.StrictMode>,
   document.getElementById('root')
 );

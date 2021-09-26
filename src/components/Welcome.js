@@ -20,8 +20,8 @@ function Welcome() {
                     </div>
                 </div>
                 <button>
-                        <i className="fa fa-angle-down" />
-                    </button>
+                    <i className="fa fa-angle-down" />
+                </button>
             </div>
         </div>
     )

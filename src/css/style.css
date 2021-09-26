@@ -1,5 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+nav {
+  padding: 0px 16%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 32px;
+  list-style: none;
+}
+
+nav ul a {
+  padding: 10px 12px;
+  color: #444;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav ul a.active {
+  background: #00a59d;
+  color: #eee;
+}
+
+nav i {
+  color: #00a59d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +59,6 @@ input {
   background-image: url("../img/welcome.jpg");
   background-repeat: none;
   background-size: cover;
-  filter: blur(20px);
 }
 
 .welcome .welcome-content {
