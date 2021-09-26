@@ -1,5 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
 
+$turquoise: #00a59d;
 // font-family: 'Lato', sans-serif;
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.welcome {
+  height: 100vh;
+  .background-img {
+    height: 100vh;
+    background-image: url("../img/welcome.jpg");
+    background-repeat: none;
+    background-size: cover;
+    filter: blur(20px);
+  }
+  .welcome-content {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    p.hint {
+      font-size: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 8px;
+      font-weight: 900;
+      font-size: 60px;
+    }
+    .subtitle {
+      padding: 8px 8px;
+      background: black;
+      color: white;
+      border-radius: 4px;
+      font-size: 18px;
+      font-style: italic;
+    }
+    .proceed {
+      display: grid;
+      grid-template-columns: 0.4fr auto 0.4fr;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 42px;
+      h2 {
+        font-weight: 900;
+        span {
+          color: $turquoise;
+        }
+      }
+      .lines {
+        display: flex;
+        row-gap: 4px;
+        flex-direction: column;
+        div {
+          width: 100%;
+          height: 1px;
+          background: white;
+        }
+      }
+    }
+    button {
+      height: 48px;
+      width: 48px;
+      margin-top: 48px;
+      align-self: center;
+      border: 3px solid $turquoise;
+      border-radius: 50%;
+      i.fa-angle-down {
+        font-size: 32px;
+        color: $turquoise;
+      }
+    }
+  }
+}
