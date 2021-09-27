@@ -1,6 +1,4 @@
 .features-container {
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
   display: flex;
   justify-content: center;
   column-gap: 40px;
@@ -17,8 +15,8 @@
       "image description";
     position: relative;
     .feature-image {
-        height: max-content;
-        grid-area: image;
+      height: max-content;
+      grid-area: image;
 
       img {
         width: 40px;

@@ -37,10 +37,6 @@ nav i {
   color: #00a59d;
 }
 
-.services {
-  height: 600px;
-}
-
 .services .feature-list {
   display: flex;
   column-gap: 40px;
@@ -94,7 +90,6 @@ nav i {
 }
 
 .skills {
-  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   column-gap: 24px;
@@ -137,8 +132,6 @@ nav i {
 }
 
 .features-container {
-  padding-top: 60px !important;
-  padding-bottom: 60px !important;
   display: flex;
   justify-content: center;
   column-gap: 40px;
@@ -201,7 +194,6 @@ nav i {
 }
 
 .clients-container {
-  height: 240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -375,11 +367,10 @@ input {
 }
 
 .container {
-  padding: 0px 16%;
+  padding: 80px 16%;
 }
 
 .heading {
-  margin-bottom: 42px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -390,7 +381,6 @@ input {
   grid-template-columns: 0.4fr auto 0.4fr;
   justify-content: space-between;
   align-items: center;
-  margin-top: 42px;
 }
 
 .heading .title h2 {
