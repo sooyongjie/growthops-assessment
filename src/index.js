@@ -20,7 +20,8 @@ ReactDOM.render(
     <Services />
     <Skills />
     <Features />
-    {/* <Contacts />
+    <Contacts />
+    {/* 
     <Form />
     */}
     <Reviews />

@@ -228,6 +228,81 @@ nav i {
   filter: invert(100%) saturate(0);
 }
 
+.contacts-container {
+  background: #333;
+  color: #dadada;
+}
+
+.contacts-container .contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-container .contacts .contact {
+  width: 260px;
+}
+
+.contacts-container .contacts .contact img {
+  width: inherit;
+}
+
+.contacts-container .contacts .contact .contact-details {
+  padding: 0 0 24px 0;
+  margin-top: -4px;
+  border: 2px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.contacts-container .contacts .contact .name {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-container .contacts .contact .name p {
+  padding: 12px 16px;
+  width: max-content;
+  border-radius: 4px;
+  background: #00a59d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.contacts-container .contacts .contact .position {
+  color: #666;
+  font-size: 13px;
+}
+
+.contacts-container .contacts .contact hr {
+  width: 100px;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+.contacts-container .contacts .contact .row {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  color: #aaa;
+}
+
+.contacts-container .contacts .contact .row p {
+  font-size: 14px;
+}
+
+.contacts-container button {
+  width: 100%;
+  margin-top: 48px;
+  padding: 12px 0;
+  background: #00a59d;
+  color: #dadada;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
 footer {
   height: 80px;
   display: flex;
@@ -289,6 +364,7 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 button,
@@ -300,7 +376,6 @@ input {
 
 .container {
   padding: 0px 16%;
-  font-family: "Lato", sans-serif;
 }
 
 .heading {
@@ -390,7 +465,6 @@ button.colored-nav-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Lato", sans-serif;
 }
 
 .welcome .welcome-content p.hint {
