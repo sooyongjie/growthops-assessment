@@ -1,0 +1,55 @@
+.form-container {
+  h1 {
+    margin-bottom: 24px;
+    color: $turquoise;
+    font-size: 48px;
+    font-style: italic;
+  }
+  form {
+    width: 100%;
+    padding: 24px;
+    border: 2px solid #cacaca;
+    display: grid;
+    column-gap: 48px;
+    row-gap: 24px;
+    grid-template-areas:
+      "name occupation"
+      "email telephone"
+      "message message"
+      "btn btn";
+    justify-content: center;
+    input,
+    select,
+    textarea {
+      width: 400px;
+      border: 1px solid #cacaca;
+      padding: 16px;
+      border-radius: 4px;
+      resize: none;
+    }
+    #input-name {
+      grid-area: name;
+    }
+    #input-email {
+      grid-area: email;
+    }
+    #input-message {
+      grid-area: message;
+    }
+    #input-occupation {
+      grid-area: occupation;
+    }
+    #input-telephone {
+      grid-area: telephone;
+    }
+    button#submit-form-btn {
+      width: 260px;
+      padding: 12px;
+      grid-area: btn;
+      background: $turquoise;
+      color: #eaeaea;
+      border-radius: 4px;
+      font-weight: 800;
+    }
+  }
+}

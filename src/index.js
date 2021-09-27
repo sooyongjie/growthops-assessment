@@ -9,7 +9,7 @@ import Features from './components/Features';
 import Clients from './components/Clients';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
-import Form from './components/Features';
+import Form from './components/Form';
 import Reviews from './components/Reviews';
 
 ReactDOM.render(
@@ -21,9 +21,7 @@ ReactDOM.render(
     <Skills />
     <Features />
     <Contacts />
-    {/* 
     <Form />
-    */}
     <Reviews />
     <Clients />
     <Footer />
