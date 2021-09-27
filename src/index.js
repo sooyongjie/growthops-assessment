@@ -23,8 +23,8 @@ ReactDOM.render(
     {/* <Contacts />
     <Form />
     <Reviews />
-    <Clients />
     */}
+    <Clients />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

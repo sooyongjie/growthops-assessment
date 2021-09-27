@@ -200,6 +200,54 @@ nav i {
   line-height: 1.5;
 }
 
+.clients-container {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3c3c3c;
+}
+
+.clients-container button {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.clients-container button.prev-client {
+  background: #eaeaea;
+  color: #00a59d;
+}
+
+.clients-container button.next-client {
+  color: #eaeaea;
+  background: #00a59d;
+}
+
+.clients-container .clients {
+  display: flex;
+  column-gap: 24px;
+}
+
+.clients-container .client {
+  background: #333;
+  padding: 20px;
+  height: 140px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-container .client img {
+  width: 80%;
+  filter: invert(100%) saturate(0);
+}
+
 footer {
   height: 80px;
   display: flex;
