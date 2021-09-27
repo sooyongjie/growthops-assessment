@@ -6,6 +6,11 @@ import Nav from './components/Nav';
 import Services from './components/Services';
 import Skills from './components/Skills';
 import Features from './components/Features';
+import Clients from './components/Clients';
+import Contacts from './components/Contacts';
+import Footer from './components/Footer';
+import Form from './components/Features';
+import Reviews from './components/Reviews';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +20,11 @@ ReactDOM.render(
     <Services />
     <Skills />
     <Features />
+    {/* <Contacts />
+    <Form />
+    <Reviews />
+    <Clients />
+    <Footer /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
