@@ -41,19 +41,19 @@ nav i {
   height: 600px;
 }
 
-.feature-list {
+.services .feature-list {
   display: flex;
   column-gap: 40px;
 }
 
-.feature {
+.services .feature {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.feature .feature-icon {
+.services .feature .feature-icon {
   height: 100px;
   width: 100px;
   margin-bottom: 24px;
@@ -64,22 +64,22 @@ nav i {
   border-radius: 50%;
 }
 
-.feature .feature-icon i {
+.services .feature .feature-icon i {
   color: white;
   font-size: 32px;
 }
 
-.feature .feature-name {
+.services .feature .feature-name {
   margin-bottom: 12px;
   font-weight: 900;
 }
 
-.feature .feature-desc {
+.services .feature .feature-desc {
   margin-bottom: 24px;
   color: #666;
 }
 
-.feature button {
+.services .feature button {
   padding: 6px 10px;
   color: #888;
   border: 1px solid #cacaca;
@@ -134,6 +134,70 @@ nav i {
   font-weight: 700;
   text-align: center;
   font-size: 15px;
+}
+
+.features-container {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.features-container .feature {
+  width: 360px;
+  display: grid;
+  column-gap: 16px;
+  row-gap: 4px;
+  grid-template-areas: "image title" "image subtitle" "image description";
+  position: relative;
+}
+
+.features-container .feature .feature-image {
+  height: max-content;
+  grid-area: image;
+}
+
+.features-container .feature .feature-image img {
+  width: 40px;
+}
+
+.features-container .feature .feature-image i {
+  font-size: 18px;
+  color: #cacaca;
+}
+
+.features-container .feature .feature-image .icon-wrapper {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 11px;
+  top: 11px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.features-container .feature p.feature-title {
+  grid-area: title;
+  font-weight: 800;
+  color: #666;
+}
+
+.features-container .feature p.feature-subtitle {
+  grid-area: subtitle;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.features-container .feature p.feature-desc {
+  margin-top: 12px;
+  grid-area: description;
+  color: #666;
+  line-height: 1.5;
 }
 
 * {

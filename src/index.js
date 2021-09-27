@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import Nav from './components/Nav';
 import Services from './components/Services';
 import Skills from './components/Skills';
+import Features from './components/Features';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Nav />
     <Services />
     <Skills />
+    <Features />
   </React.StrictMode>,
   document.getElementById('root')
 );
