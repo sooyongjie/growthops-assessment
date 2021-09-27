@@ -208,26 +208,6 @@ nav i {
   background: #3c3c3c;
 }
 
-.clients-container button {
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.clients-container button.prev-client {
-  background: #eaeaea;
-  color: #00a59d;
-}
-
-.clients-container button.next-client {
-  color: #eaeaea;
-  background: #00a59d;
-}
-
 .clients-container .clients {
   display: flex;
   column-gap: 24px;
@@ -256,6 +236,53 @@ footer {
   background: #333;
   color: #aaa;
   font-size: 13px;
+}
+
+.reviews-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #00a59d;
+}
+
+.review div {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.review div p.reviewer {
+  padding: 8px 12px;
+  background: #eaeaea;
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+  width: max-content;
+  border-radius: 4px;
+}
+
+.review div span {
+  color: #00a59d;
+  font-size: 15px;
+  font-style: initial;
+  font-weight: 800;
+}
+
+.review p.review-text {
+  text-align: center;
+  color: #eee;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  column-gap: 8px;
 }
 
 * {
@@ -316,6 +343,31 @@ input {
   color: #999;
   font-weight: 600;
   align-self: center;
+}
+
+button.nav-btn {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button.dark-nav-btn {
+  background: #444;
+  color: #eaeaea;
+}
+
+button.light-nav-btn {
+  background: #eaeaea;
+  color: #00a59d;
+}
+
+button.colored-nav-btn {
+  color: #eaeaea;
+  background: #00a59d;
 }
 
 .welcome {

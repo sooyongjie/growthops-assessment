@@ -22,8 +22,8 @@ ReactDOM.render(
     <Features />
     {/* <Contacts />
     <Form />
-    <Reviews />
     */}
+    <Reviews />
     <Clients />
     <Footer />
   </React.StrictMode>,

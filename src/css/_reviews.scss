@@ -1,0 +1,45 @@
+.reviews-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $turquoise;
+}
+
+.review {
+  div {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    p.reviewer {
+      padding: 8px 12px;
+      background: #eaeaea;
+      color: #aaa;
+      font-size: 14px;
+      font-style: italic;
+      width: max-content;
+      border-radius: 4px;
+    }
+    span {
+      color: $turquoise;
+      font-size: 15px;
+      font-style: initial;
+      font-weight: 800;
+    }
+  }
+  p.review-text {
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
+
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  column-gap: 8px;
+}

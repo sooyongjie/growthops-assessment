@@ -4,7 +4,7 @@ import f1 from '../img/f1.png'
 function Clients() {
     return (
         <div className="clients-container container">
-            <button className="prev-client">
+            <button className="prev-client nav-btn light-nav-btn">
                 <i class="fas fa-caret-left"></i>
             </button>
             <div className="clients">
@@ -21,7 +21,7 @@ function Clients() {
                     <img src={f1} alt="" />
                 </div>
             </div>
-            <button className="next-client">
+            <button className="next-client nav-btn colored-nav-btn">
                 <i class="fas fa-caret-right"></i>
             </button>
         </div>

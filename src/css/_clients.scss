@@ -4,23 +4,6 @@
   align-items: center;
   justify-content: space-between;
   background: rgb(60, 60, 60);
-  button {
-    height: 24px;
-    width: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    font-size: 16px;
-    &.prev-client {
-      background: #eaeaea;
-      color: $turquoise;
-    }
-    &.next-client {
-      color: #eaeaea;
-      background: $turquoise;
-    }
-  }
   .clients {
     display: flex;
     column-gap: 24px;
