@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 button,
@@ -30,7 +31,6 @@ input {
 
 .container {
   padding: 0px $padding;
-  font-family: "Lato", sans-serif;
 }
 
 .heading {
@@ -110,7 +110,6 @@ button.colored-nav-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Lato", sans-serif;
     p.hint {
       font-size: 20px;
       text-align: center;
