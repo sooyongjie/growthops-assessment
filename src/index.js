@@ -24,7 +24,8 @@ ReactDOM.render(
     <Form />
     <Reviews />
     <Clients />
-    <Footer /> */}
+    */}
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
