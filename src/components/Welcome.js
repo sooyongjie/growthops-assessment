@@ -10,7 +10,9 @@ function Welcome() {
                 <h1>LET'S BE CREATIVE!</h1>
                 <p className="subtitle">LOREM IPSUM DOLOR SIT AMET</p>
                 <Heading type="2,1" highlight="START " text="DOING THAT" line="white" />
-                <button>
+                <button onClick={() => {
+                    document.querySelector("nav").scrollIntoView({ behavior: "smooth" });
+                }}>
                     <i className="fa fa-angle-down" />
                 </button>
             </div>
