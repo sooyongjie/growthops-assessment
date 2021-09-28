@@ -147,44 +147,198 @@ nav i {
 
 .skills {
   display: flex;
-  justify-content: center;
-  column-gap: 24px;
+  justify-content: space-evenly;
 }
 
-.skills .skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 140px;
+.set-size {
+  font-size: 10em;
 }
 
-.skills .skill .skill-percentage {
+.charts-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.skill {
   height: 110px;
   width: 110px;
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #00a59d;
-  border-radius: 50%;
+  position: relative;
 }
 
-.skills .skill .skill-percentage p {
+.skill:nth-child(3n + 1) {
+  clear: both;
+}
+
+.skill .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 110px, 110px, 55px);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.skill .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 55px, 110px, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.skill .label {
+  background: #34495e;
+  border-radius: 50%;
+  cursor: default;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 800;
-  color: white;
+  color: white !important;
   font-size: 20px;
 }
 
-.skills .skill .skill-percentage span {
-  font-size: 15px;
-  font-weight: 500;
+.skill .label .smaller {
+  color: white !important;
+  font-size: 12px;
+  vertical-align: middle;
 }
 
-.skills .skill .skill-name {
+.skill .shadow {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #bdc3c7;
+  border-radius: 50%;
+}
+
+.skill .skill-name {
+  margin-top: 12px;
   color: #888;
-  font-weight: 700;
+  font-size: 14px;
   text-align: center;
-  font-size: 15px;
+  font-weight: 600;
+}
+
+.skill.style-2 .label {
+  background: none;
+  color: #7f8c8d;
+}
+
+.skill.style-2 .label .smaller {
+  color: #bdc3c7;
+}
+
+.skill.progress-45 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-45 .pie .left-side {
+  transform: rotate(162deg);
+}
+
+.skill.progress-45 .pie .right-side {
+  display: none;
+}
+
+.skill.progress-92 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.skill.progress-92 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-92 .pie .left-side {
+  transform: rotate(331.2deg);
+}
+
+.skill.progress-92 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.skill.progress-69 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.skill.progress-69 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-69 .pie .left-side {
+  transform: rotate(248.4deg);
+}
+
+.skill.progress-69 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.skill.progress-100 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.skill.progress-100 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-100 .pie .left-side {
+  transform: rotate(360deg);
+}
+
+.skill.progress-100 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.skill.progress-83 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.skill.progress-83 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-83 .pie .left-side {
+  transform: rotate(298.8deg);
+}
+
+.skill.progress-83 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.skill.progress-50 .pie .half-circle {
+  border-color: #00a59d;
+}
+
+.skill.progress-50 .pie .left-side {
+  transform: rotate(180deg);
+}
+
+.skill.progress-50 .pie .right-side {
+  display: none;
+}
+
+.skill--solid {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.skill--solid:before {
+  border-radius: 0 100% 100% 0 / 50%;
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+}
+
+.skill--solid .label {
+  background: transparent;
 }
 
 .features-container {

@@ -1,0 +1,167 @@
+// -- vars
+$bg-color: #34495e;
+$default-size: 110px;
+
+// -- mixins
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+  .pie {
+    .half-circle {
+      border-color: $color;
+    }
+
+    .left-side {
+      transform: rotate($progress * 3.6deg);
+    }
+
+    @if $progress <= 50 {
+      .right-side {
+        display: none;
+      }
+    } @else {
+      clip: rect(auto, auto, auto, auto);
+
+      .right-side {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@mixin draw-progress--solid($progress, $color, $bg-color) {
+  background: linear-gradient(to right, $color 50%, $bg-color 50%);
+
+  &:before {
+    @if $progress <= 50 {
+      background: $bg-color;
+      transform: rotate((100 - (50 - $progress)) / 100 * 360deg * -1);
+    } @else {
+      background: $color;
+      transform: rotate((100 - $progress) / 100 * 360deg);
+    }
+  }
+}
+
+.set-size {
+  font-size: 10em;
+}
+
+.charts-container {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+.skill {
+  @include size($default-size, $default-size);
+  position: relative;
+
+  &:nth-child(3n + 1) {
+    clear: both;
+  }
+
+  .pie {
+    @include size(100%, 100%);
+    clip: rect(0, $default-size, $default-size, $default-size / 2);
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .half-circle {
+      @include size(100%, 100%);
+      border: 3px solid #3498db;
+      border-radius: 50%;
+      clip: rect(0, $default-size / 2, $default-size, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .label {
+    background: $bg-color;
+    border-radius: 50%;
+    cursor: default;
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: white !important;
+    font-size: 20px;
+    .smaller {
+      color: white !important;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
+
+  .shadow {
+    @include size(100%, 100%);
+    border: 3px solid #bdc3c7;
+    border-radius: 50%;
+  }
+
+  .skill-name {
+    margin-top: 12px;
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &.style-2 {
+    .label {
+      background: none;
+      color: #7f8c8d;
+
+      .smaller {
+        color: #bdc3c7;
+      }
+    }
+  }
+
+  &.progress-45 {
+    @include draw-progress(45, $turquoise);
+  }
+  &.progress-92 {
+    @include draw-progress(92, $turquoise);
+  }
+  &.progress-69 {
+    @include draw-progress(69, $turquoise);
+  }
+  &.progress-100 {
+    @include draw-progress(100, $turquoise);
+  }
+  &.progress-83 {
+    @include draw-progress(83, $turquoise);
+  }
+  &.progress-50 {
+    @include draw-progress(50, $turquoise);
+  }
+}
+
+.skill--solid {
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    border-radius: 0 100% 100% 0 / 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+  }
+
+  .label {
+    background: transparent;
+  }
+}
