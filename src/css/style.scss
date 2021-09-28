@@ -13,6 +13,8 @@
 @import "footer";
 @import "form";
 @import "reviews";
+//responsive
+@import "media-queries";
 
 // font-family: 'Lato', sans-serif;
 // font-family: 'Poppins', sans-serif;
@@ -33,6 +35,7 @@ input {
 }
 
 .container {
+  height: max-content !important;
   position: relative;
   padding: 80px $padding;
 }

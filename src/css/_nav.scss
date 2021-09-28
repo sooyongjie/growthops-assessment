@@ -5,12 +5,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto", sans-serif;
-
+  position: relative;
+  overflow-x: hidden;
   img {
     height: 50px;
   }
   ul {
+    background: #fff;
     display: flex;
+    align-items: center;
     column-gap: 32px;
     list-style: none;
     a {
@@ -25,6 +28,9 @@ nav {
         color: #eee;
       }
     }
+  }
+  button {
+    display: none;
   }
   i {
     color: $turquoise;
