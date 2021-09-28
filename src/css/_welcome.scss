@@ -1,0 +1,49 @@
+.welcome {
+  height: 100vh;
+  .background-img {
+    height: 100vh;
+    background-image: url("../img/welcome.jpg");
+    background-repeat: none;
+    background-size: cover;
+    // filter: blur(20px);
+  }
+  .welcome-content {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p.hint {
+      font-size: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 8px;
+      font-weight: 900;
+      font-size: 60px;
+    }
+    .subtitle {
+      margin-bottom: 48px;
+      padding: 8px 8px;
+      background: black;
+      color: white;
+      border-radius: 4px;
+      font-size: 18px;
+      font-style: italic;
+    }
+    button {
+      height: 48px;
+      width: 48px;
+      align-self: center;
+      border: 3px solid $turquoise;
+      border-radius: 50%;
+      i.fa-angle-down {
+        font-size: 32px;
+        color: $turquoise;
+      }
+    }
+  }
+}
