@@ -429,6 +429,7 @@ input {
 }
 
 .heading {
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
