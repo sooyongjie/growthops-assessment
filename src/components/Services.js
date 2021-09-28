@@ -1,25 +1,10 @@
 import React from 'react'
-import squares from '../img/tri-square.svg'
+import Heading from './Heading'
 
 function Services() {
     return (
         <div className="services container">
-            <div className="heading">
-                <div className="title">
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                    <img src={squares} alt="" />
-                    <h2>WHAT WE <span>OFFER</span></h2>
-                    <img src={squares} alt="" />
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                </div>
-                <p className="subtitle">We offer our customers the best services & solutions, this is our list of main services</p>
-            </div>
+            <Heading type="1,2" text="WHAT WE " highlight="OFFER" subtitle="We offer our customers the best services & solutions, this is our list of main services"/>
             <div className="feature-list">
                 <div className="feature">
                     <div className="feature-icon">

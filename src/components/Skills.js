@@ -1,22 +1,10 @@
 import React from 'react'
+import Heading from './Heading'
 
 function Skills() {
     return (
         <div className="skills-container container">
-            <div className="heading">
-                <div className="title">
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                    <h2>OUR POWERFUL <span>SKILLS</span></h2>
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                </div>
-                <p className="subtitle">We're good and experienced at different things and areas and we promise about quality of our work</p>
-            </div>
+            <Heading text="OUR POWERFUL " highlight="SKILLS" />
             <div className="skills">
                 <div className="skill">
                     <div className="skill-percentage">

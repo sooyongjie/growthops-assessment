@@ -1,4 +1,5 @@
 import React from 'react'
+import Heading from './Heading'
 
 function Welcome() {
     return (
@@ -8,20 +9,10 @@ function Welcome() {
                 <p className="hint">WHAT ARE YOU WAITING FOR?</p>
                 <h1>LET'S BE CREATIVE!</h1>
                 <p className="subtitle">LOREM IPSUM DOLOR SIT AMET</p>
-                <div className="proceed">
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                    <h2><span>START</span> DOING THAT</h2>
-                    <div className="lines">
-                        <div className=""></div>
-                        <div className=""></div>
-                    </div>
-                </div>
+                <Heading type="2,1" highlight="START " text="DOING THAT" />
                 <button>
                     <i className="fa fa-angle-down" />
-                </button>
+                </button> 
             </div>
         </div>
     )
