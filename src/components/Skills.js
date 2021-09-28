@@ -1,9 +1,11 @@
 import React from 'react'
 import Heading from './Heading'
+import IconOnTop from './IconOnTop'
 
 function Skills() {
     return (
         <div className="skills-container container">
+            <IconOnTop icon="fas fa-toolbox"/>
             <Heading theme="dark" text="OUR POWERFUL " highlight="SKILLS" subtitle="We're good and experienced at different things and areas and we promise about quality of our work" />
             <div className="skills">
                 <div class="skill progress-45 style-2">

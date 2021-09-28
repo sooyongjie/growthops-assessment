@@ -1,8 +1,11 @@
 import React from 'react'
+import IconOnTop from './IconOnTop'
 
 function Reviews() {
     return (
         <div className="reviews-container container">
+            <IconOnTop theme="dark" icon="fas fa-quote-left"/>
+
             <div className="review">
                 <div>
                     <p className="reviewer"><span>ALEXIS SIMPSON</span> - CEO & Developer</p>
