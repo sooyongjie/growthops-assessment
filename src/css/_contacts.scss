@@ -2,10 +2,12 @@
   background: #333;
   color: #dadada;
   .contacts {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    column-gap: 40px;
     .contact {
-      width: 260px;
+      width: auto;
       img {
         width: 100%;
       }

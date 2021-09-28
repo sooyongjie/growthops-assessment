@@ -415,11 +415,14 @@ nav i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 24px;
   background: #3c3c3c;
 }
 
 .clients-container .clients {
+  width: 100%;
   display: flex;
+  justify-content: center;
   column-gap: 24px;
 }
 
@@ -427,7 +430,7 @@ nav i {
   background: #333;
   padding: 20px;
   height: 140px;
-  width: 260px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,12 +447,14 @@ nav i {
 }
 
 .contacts-container .contacts {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  column-gap: 40px;
 }
 
 .contacts-container .contacts .contact {
-  width: 260px;
+  width: auto;
 }
 
 .contacts-container .contacts .contact img {
