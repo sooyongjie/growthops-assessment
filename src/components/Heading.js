@@ -10,7 +10,7 @@ export default function Heading(props) {
     return (
         <div className={props.theme == "dark" ? "dark heading" : "heading"}>
             <div className="title">
-                <div className="lines">
+                <div className={props.line == "white" ? "lines white" : "lines"}>
                     <div className=""></div>
                     <div className=""></div>
                 </div>
@@ -21,7 +21,7 @@ export default function Heading(props) {
                         : <h2><span>{props.highlight}</span>{props.text}</h2>
                 }
                 <img src={squares} alt="" />
-                <div className="lines">
+                <div className={props.line == "white" ? "lines white" : "lines"}>
                     <div className=""></div>
                     <div className=""></div>
                 </div>

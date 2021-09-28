@@ -833,6 +833,10 @@ input {
   flex-direction: column;
 }
 
+.heading .title .lines.white div {
+  background: #fff !important;
+}
+
 .heading .title .lines div {
   width: 100%;
   height: 1px;

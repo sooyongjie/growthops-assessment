@@ -9,10 +9,10 @@ function Welcome() {
                 <p className="hint">WHAT ARE YOU WAITING FOR?</p>
                 <h1>LET'S BE CREATIVE!</h1>
                 <p className="subtitle">LOREM IPSUM DOLOR SIT AMET</p>
-                <Heading type="2,1" highlight="START " text="DOING THAT" />
+                <Heading type="2,1" highlight="START " text="DOING THAT" line="white" />
                 <button>
                     <i className="fa fa-angle-down" />
-                </button> 
+                </button>
             </div>
         </div>
     )
