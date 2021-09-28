@@ -1,4 +1,5 @@
 import React from 'react'
+import squares from '../img/tri-square.svg'
 
 function Services() {
     return (
@@ -9,7 +10,9 @@ function Services() {
                         <div className=""></div>
                         <div className=""></div>
                     </div>
+                    <img src={squares} alt="" />
                     <h2>WHAT WE <span>OFFER</span></h2>
+                    <img src={squares} alt="" />
                     <div className="lines">
                         <div className=""></div>
                         <div className=""></div>

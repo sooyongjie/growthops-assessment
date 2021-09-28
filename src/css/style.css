@@ -436,7 +436,7 @@ input {
 
 .heading .title {
   display: grid;
-  grid-template-columns: 0.4fr auto 0.4fr;
+  grid-template-columns: 0.4fr auto auto auto 0.4fr;
   justify-content: space-between;
   align-items: center;
 }
@@ -450,6 +450,10 @@ input {
   color: #00a59d;
 }
 
+.heading .title img {
+  width: 30px;
+}
+
 .heading .title .lines {
   display: flex;
   row-gap: 4px;
@@ -459,7 +463,7 @@ input {
 .heading .title .lines div {
   width: 100%;
   height: 1px;
-  background: #ccc;
+  background: #ddd;
 }
 
 .heading .subtitle {
