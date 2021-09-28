@@ -6,7 +6,7 @@ nav {
   align-items: center;
   font-family: "Roboto", sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   img {
     height: 50px;
   }
@@ -29,7 +29,7 @@ nav {
       }
     }
   }
-  button {
+  div {
     display: none;
   }
   i {

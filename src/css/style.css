@@ -64,7 +64,7 @@ nav {
   align-items: center;
   font-family: "Roboto", sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 nav img {
@@ -93,7 +93,7 @@ nav ul a.active {
   color: #eee;
 }
 
-nav button {
+nav div {
   display: none;
 }
 
@@ -640,10 +640,10 @@ footer {
     transform: translateX(100%);
     transition: 0.3 ease-in-out;
   }
-  body nav button {
+  body nav div {
     display: block;
   }
-  body nav div:hover ul {
+  body nav button:focus ul {
     transform: translateX(0%);
   }
   body nav:focus-within {

@@ -5,7 +5,7 @@ function Nav() {
     return (
         <nav>
             <img src={logo} alt="" />
-            <div>
+            <button type="button">
                 <ul>
                     <a href="">
                         <li>HOME</li>
@@ -33,10 +33,10 @@ function Nav() {
                     </a>
                     <i className="fas fa-search" />
                 </ul>
-                <button>
+                <div>
                     <i class="fas fa-bars"></i>
-                </button>
-            </div>
+                </div>
+            </button>
         </nav>
     )
 }
