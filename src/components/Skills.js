@@ -4,7 +4,7 @@ import Heading from './Heading'
 function Skills() {
     return (
         <div className="skills-container container">
-            <Heading text="OUR POWERFUL " highlight="SKILLS" />
+            <Heading theme="dark" text="OUR POWERFUL " highlight="SKILLS" subtitle="We're good and experienced at different things and areas and we promise about quality of our work"/>
             <div className="skills">
                 <div className="skill">
                     <div className="skill-percentage">

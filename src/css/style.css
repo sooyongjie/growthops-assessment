@@ -491,6 +491,18 @@ input {
   row-gap: 12px;
 }
 
+.heading.dark .title {
+  color: #dadada;
+}
+
+.heading.dark .title .lines div {
+  background: #666;
+}
+
+.heading.dark .subtitle {
+  color: #666;
+}
+
 .heading .title {
   display: grid;
   grid-template-columns: 0.4fr auto auto auto 0.4fr;

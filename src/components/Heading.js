@@ -8,7 +8,7 @@ export default function Heading(props) {
         highlight: "BEEP BOOP"
     }
     return (
-        <div className="heading">
+        <div className={props.theme == "dark" ? "dark heading" : "heading"}>
             <div className="title">
                 <div className="lines">
                     <div className=""></div>

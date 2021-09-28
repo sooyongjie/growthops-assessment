@@ -39,6 +39,17 @@ input {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  &.dark {
+    .title {
+      color: #dadada;
+      .lines div {
+        background: #666;
+      }
+    }
+    .subtitle {
+      color: #666;
+    }
+  }
   .title {
     display: grid;
     grid-template-columns: 0.4fr auto auto auto 0.4fr;
